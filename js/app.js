@@ -1,35 +1,69 @@
-'use strict';
+'use strict'
 
-// Array demonstration
-// Array is a collection of values
-/*arrays store their values at an index
-first item always starts at 0
+var greetingName = prompt('Hello! Thanks for visiting. What\'s your name?');
 
-We access items in an array with  bracket notation
-ex. array[2]
-access the array at <position || index> 2
+console.log('greeting: ' + greetingName);
 
-elements are always separated by commas
-elements can be any valid javascript value but mixing types is considered bad practice
+var favoriteAnimal = prompt('Hi, ' + greetingName + ' is your favorite animal a dog?');
+console.log('Dog favorite animal? ' + favoriteAnimal);
 
-properties on arrays
-length
+if(favoriteAnimal === 'yes') {
+  alert('I love dogs too!');
+} else if(favoriteAnimal === 'no') {
+  alert('I\'m sorry you\'ve never experienced the glory and wonder that are doggos!');
+} 
 
-*/
-var emptyArray = [];
-var quizAnswers = ['a', 'b', 'c', 'd', 'e'];
-var arrayOfThings = ['string', {}, ['thing'], console.log, undefined, null, 0, 2, true, false];
+var favoriteFood = prompt('Is your favorite food pizza?');
 
-console.log('10th thing in array is ' + arrayOfThings[9]);
-console.log('9th index of the array is ' + arrayOfThings[9]);
+console.log('fave food is pizza? ' + favoriteFood);
 
-console.log(quizAnswers);
-console.log (quizAnswers[2] === 'c');
-console.log(quizAnswers);
+if(favoriteFood === 'yes') {
+  alert('I wish I didn\'t love pizza as much as I do!');
+} else if(favoriteFood === 'no') {
+  alert('I completely understand, I wish I didn\'t love pizza!');
+}
 
-quizAnswers[2] = 'z'; 
+var coffeeTime = prompt('Do you drink lots of coffee?');
+console.log('Drinks coffee? ' + coffeeTime);
 
-console.log('I have this number of quiz answers: ' + quizAnswers.length);
+if(coffeeTime === 'yes') {
+  alert('Me too! Coffee is a source of comfort and strength.');
+} else if(coffeeTime === 'no') {
+  alert('I envy your ability to function without coffee!');
+}
 
-console.log(quizAnswers);
-//console.log(arrayOfThings);
+var faveBook = prompt('Have you read the novel Sunshine by Robin McKinley?');
+console.log('Read Sunshine? ' + faveBook);
+
+if(faveBook === 'yes') {
+  alert('OMG, same here! Possibly one of my favorite books of all time!');
+} else if(faveBook === 'no') {
+  alert
+}
+
+else {
+  alert('please answer with "yes" or "no", thanks!')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
