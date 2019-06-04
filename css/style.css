@@ -1,0 +1,15 @@
+header {
+  background-color: rgb(102, 236, 192);
+  border: 5px double rgb(174, 147, 247);
+  
+}
+
+article {
+  background-color: azure;
+  border: 2px solid black;
+  display: block;
+  padding: 10px;
+
+
+}
+
