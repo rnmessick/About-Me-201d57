@@ -1,7 +1,7 @@
-'use strict'
+'use strict';
 
 var greetingName = prompt('Hello! Thanks for visiting. What\'s your name?');
-
+var disappointedInYou = 'Aww, come on. Give it a try!';
 console.log('greeting: ' + greetingName);
 
 //Checking if the user loves dogs
@@ -13,19 +13,19 @@ if(favoriteAnimal === 'yes' || favoriteAnimal === 'y') {
 } else if(favoriteAnimal === 'no' || favoriteAnimal === 'n') {
   alert('I\'m sorry you\'ve never experienced the glory and wonder that are doggos!');
 } else {
-  alert('Aww, come on. Okay, next question');
+  alert(disappointedInYou);
 }
 
-//Does the visitor love pizza?
-var favoriteFood = prompt('Is your favorite food pizza?').toLowerCase();
-console.log('fave food is pizza? ' + favoriteFood);
+//I only like veggie sushi. Can the user guess this?
+var favoriteFood = prompt('Is my favorite food sushi?').toLowerCase();
+console.log('fave food is sushi ' + favoriteFood);
 
 if(favoriteFood === 'yes' || favoriteFood === 'y') {
-  alert('I wish I didn\'t love pizza as much as I do!');
+  alert('Oh, sorry. I really don\'t like fish!');
 } else if(favoriteFood === 'no' || favoriteFood === 'n') {
-  alert('I completely understand, I wish I didn\'t love pizza!');
+  alert('You got it! I don\'t mind veggie sushi though');
 }else {
-  alert('Aww, come on. Okay, next question');
+  ;
 }
 //Does the visitor drink as much coffee as me?
 var coffeeTime = prompt('Do you drink lots of coffee?').toLowerCase();
@@ -62,3 +62,33 @@ if(watchShow === 'yes' || watchShow === 'y') {
 } else {
   alert('Aww, come on. Okay, next question');
 }
+
+// Question 6 will be a number guessing game
+
+var yourGuess = prompt('Let\'s play a game! Can you guess the number I\'m thinking of? It\'s a number between 1 and 25. You have 4 guesses!');
+var myNumber = 13;
+for (var g = 1; g < 4; g++){ 
+
+  if (yourGuess == myNumber) {
+    alert('Congrats! You guessed correctly in only ' + g + ' attempt(s)');
+    console.log(yourGuess + ' You got it! Well done');
+    break;
+ 
+  } else if (yourGuess > myNumber) {
+    yourGuess = prompt('Sorry that is too high. Try again!');
+    console.log('User guessed ' + yourGuess);
+
+  } else if (yourGuess < myNumber) {
+    yourGuess = prompt('Sorry! That is too low. Try again!');
+    console.log('User guessed ' + yourGuess);
+  }
+  else {
+    yourGuess = prompt('Try again! Remember, a number between 1 and 25');
+    console.log('User guessed ' + yourGuess);
+
+  }
+}    
+
+
+
+//Question 7 will be a question with multiple correct answers
