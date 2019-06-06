@@ -10,4 +10,7 @@ Added features:
 
 -Added the ability to tally the total number of correct answers and create a prompt for for the user that congratulates the user for # of correct q's
 
--
+6/6/2019
+Pair partners!
+-Driver: Nick Paro
+-Navigator: Renee Messick
