@@ -13,7 +13,7 @@ if(favoriteAnimal === 'yes' || favoriteAnimal === 'y') {
 } else if(favoriteAnimal === 'no' || favoriteAnimal === 'n') {
   alert('I\'m sorry you\'ve never experienced the glory and wonder that are doggos!');
 } else {
-  alert(disappointedInYou);
+  favoriteAnimal = prompt(disappointedInYou);
 }
 
 //I only like veggie sushi. Can the user guess this?
@@ -25,7 +25,7 @@ if(favoriteFood === 'yes' || favoriteFood === 'y') {
 } else if(favoriteFood === 'no' || favoriteFood === 'n') {
   alert('You got it! I don\'t mind veggie sushi though');
 }else {
-  ;
+  favoriteFood = prompt(disappointedInYou);
 }
 //Does the visitor drink as much coffee as me?
 var coffeeTime = prompt('Do you drink lots of coffee?').toLowerCase();
@@ -36,7 +36,7 @@ if(coffeeTime === 'yes' || coffeeTime === 'y') {
 } else if(coffeeTime === 'no' || coffeeTime === 'n') {
   alert('I envy your ability to function without coffee!');
 }else {
-  alert('Aww, come on. Okay, next question');
+  coffeeTime = prompt(disappointedInYou);
 }
 
 //Never miss a chance to plug my fave book Sunshine
@@ -48,7 +48,7 @@ if(faveBook === 'yes'|| faveBook === 'y') {
 } else if(faveBook === 'no' || faveBook === 'n') {
   alert('Oh, then I highly recommend you read it. I\'ll even give you my copy');
 } else {
-  alert('Aww, come on. Okay, next question');
+  faveBook = prompt(disappointedInYou);
 }
 
 //Watching this now so hard to resist asking the user
@@ -60,7 +60,7 @@ if(watchShow === 'yes' || watchShow === 'y') {
 } else if(watchShow === 'no' || watchShow === 'n'){
   alert('I highly recommend you give it a try! Free with Amazon prime!');
 } else {
-  alert('Aww, come on. Okay, next question');
+  watchShow = prompt(disappointedInYou);
 }
 
 // Question 6 will be a number guessing game
@@ -70,8 +70,8 @@ var myNumber = 13;
 for (var g = 1; g < 4; g++){ 
 
   if (yourGuess == myNumber) {
-    alert('Congrats! You guessed correctly in only ' + g + ' attempt(s)');
-    console.log(yourGuess + ' You got it! Well done');
+    yourGuess = alert('Congrats! You guessed correctly in only ' + g + ' attempt(s)');
+    console.log('You got it! Well done');
     break;
  
   } else if (yourGuess > myNumber) {
@@ -89,6 +89,28 @@ for (var g = 1; g < 4; g++){
   }
 }    
 
-
-
 //Question 7 will be a question with multiple correct answers
+//I'm allowing both version of the name for the Czech Republic.
+
+var visitedCountries = ['Romania', 'England', 'Ghana', 'Germany', 'Uganda', 'Netherlands', 'Hungary', 'Czech Republic', 'Czechia'];
+
+var guessTheCountries = prompt('Can you guess the countries I have visited? You get 10 tries!');
+
+for (var i = 0; i < visitedCountries.length + 1; i++) {
+  if (visitedCountries.indexOf(guessTheCountries) === -1 ) {
+    console.log('guess: ' + guessTheCountries);
+    guessTheCountries = prompt('Oh, not yet! Try again!');
+   } else {
+    console.log('guess: ' + guessTheCountries);
+    guessTheCountries = prompt('That\'s right! Can you guess another?');
+
+    }
+
+
+  }
+
+
+
+
+
+
