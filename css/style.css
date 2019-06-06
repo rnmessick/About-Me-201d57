@@ -1,4 +1,4 @@
-/* header {
+header {
   background-color: rgb(102, 236, 192);
   border: 5px double rgb(174, 147, 247);
   text-align: center;
@@ -44,4 +44,4 @@ article {
     border-color: blueviolet; 
     background-color: rgb(11, 145, 207);
   }
- */
+
