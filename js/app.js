@@ -84,9 +84,9 @@ guessingGame();
 
 var visitedCountries = ['Romania', 'England', 'Ghana', 'Germany', 'Uganda', 'Netherlands', 'Hungary', 'Czech Republic', 'Czechia'];
 var countryGame = function(country){
-  var guessTheCountries = prompt('Can you guess the countries I have visited? You get 10 tries!');
+  var guessTheCountries = prompt('Can you guess the countries I have visited? You get 6 tries!');
 
-  for (var i = 0; i < country.length + 1; i++) {
+  for (var i = 0; i < 6; i++) {
     if (country.indexOf(guessTheCountries) === -1 ) {
       console.log('guess: ' + guessTheCountries);
       guessTheCountries = prompt('Oh, not yet! Try again!');
