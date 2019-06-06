@@ -1,67 +1,67 @@
 'use strict';
 
-// var greetingName = prompt('Hello! Thanks for visiting. What\'s your name?');
-// var disappointedInYou = 'Aww, come on. Give it a try!';
-// console.log('greeting: ' + greetingName);
+var greetingName = prompt('Hello! Thanks for visiting. What\'s your name?');
+var disappointedInYou = 'Aww, come on. Give it a try!';
+console.log('greeting: ' + greetingName);
 
-// //Checking if the user loves dogs
-// var favoriteAnimal = prompt('Hi, ' + greetingName + ' is your favorite animal a dog?').toLowerCase();
-// console.log('Dog favorite animal? ' + favoriteAnimal);
+//Checking if the user loves dogs
+var favoriteAnimal = prompt('Hi, ' + greetingName + ' is your favorite animal a dog?').toLowerCase();
+console.log('Dog favorite animal? ' + favoriteAnimal);
 
-// if(favoriteAnimal === 'yes' || favoriteAnimal === 'y') {
-//   alert('I love dogs too!');
-// } else if(favoriteAnimal === 'no' || favoriteAnimal === 'n') {
-//   alert('I\'m sorry you\'ve never experienced the glory and wonder that are doggos!');
-// } else {
-//   favoriteAnimal = prompt(disappointedInYou);
-// }
+if(favoriteAnimal === 'yes' || favoriteAnimal === 'y') {
+  alert('I love dogs too!');
+} else if(favoriteAnimal === 'no' || favoriteAnimal === 'n') {
+  alert('I\'m sorry you\'ve never experienced the glory and wonder that are doggos!');
+} else {
+  favoriteAnimal = prompt(disappointedInYou);
+}
 
-// //I only like veggie sushi. Can the user guess this?
-// var favoriteFood = prompt('Is my favorite food sushi?').toLowerCase();
-// console.log('fave food is sushi ' + favoriteFood);
+//I only like veggie sushi. Can the user guess this?
+var favoriteFood = prompt('Is my favorite food sushi?').toLowerCase();
+console.log('fave food is sushi ' + favoriteFood);
 
-// if(favoriteFood === 'yes' || favoriteFood === 'y') {
-//   alert('Oh, sorry. I really don\'t like fish!');
-// } else if(favoriteFood === 'no' || favoriteFood === 'n') {
-//   alert('You got it! I don\'t mind veggie sushi though');
-// }else {
-//   favoriteFood = prompt(disappointedInYou);
-// }
-// //Does the visitor drink as much coffee as me?
-// var coffeeTime = prompt('Do you drink lots of coffee?').toLowerCase();
-// console.log('Drinks coffee? ' + coffeeTime);
+if(favoriteFood === 'yes' || favoriteFood === 'y') {
+  alert('Oh, sorry. I really don\'t like fish!');
+} else if(favoriteFood === 'no' || favoriteFood === 'n') {
+  alert('You got it! I don\'t mind veggie sushi though');
+}else {
+  favoriteFood = prompt(disappointedInYou);
+}
+//Does the visitor drink as much coffee as me?
+var coffeeTime = prompt('Do you drink lots of coffee?').toLowerCase();
+console.log('Drinks coffee? ' + coffeeTime);
 
-// if(coffeeTime === 'yes' || coffeeTime === 'y') {
-//   alert('Me too! Coffee is a source of comfort and strength.');
-// } else if(coffeeTime === 'no' || coffeeTime === 'n') {
-//   alert('I envy your ability to function without coffee!');
-// }else {
-//   coffeeTime = prompt(disappointedInYou);
-// }
+if(coffeeTime === 'yes' || coffeeTime === 'y') {
+  alert('Me too! Coffee is a source of comfort and strength.');
+} else if(coffeeTime === 'no' || coffeeTime === 'n') {
+  alert('I envy your ability to function without coffee!');
+}else {
+  coffeeTime = prompt(disappointedInYou);
+}
 
-// //Never miss a chance to plug my fave book Sunshine
-// var faveBook = prompt('Have you read the novel Sunshine by Robin McKinley?').toLowerCase();
-// console.log('Read Sunshine? ' + faveBook);
+//Never miss a chance to plug my fave book Sunshine
+var faveBook = prompt('Have you read the novel Sunshine by Robin McKinley?').toLowerCase();
+console.log('Read Sunshine? ' + faveBook);
 
-// if(faveBook === 'yes'|| faveBook === 'y') {
-//   alert('OMG, same here! Possibly one of my favorite books of all time!');
-// } else if(faveBook === 'no' || faveBook === 'n') {
-//   alert('Oh, then I highly recommend you read it. I\'ll even give you my copy');
-// } else {
-//   faveBook = prompt(disappointedInYou);
-// }
+if(faveBook === 'yes'|| faveBook === 'y') {
+  alert('OMG, same here! Possibly one of my favorite books of all time!');
+} else if(faveBook === 'no' || faveBook === 'n') {
+  alert('Oh, then I highly recommend you read it. I\'ll even give you my copy');
+} else {
+  faveBook = prompt(disappointedInYou);
+}
 
-// //Watching this now so hard to resist asking the user
-// var watchShow = prompt('Have you watched Good Omens yet?').toLowerCase();
-// console.log('Watched Good Omens? ' + watchShow);
+//Watching this now so hard to resist asking the user
+var watchShow = prompt('Have you watched Good Omens yet?').toLowerCase();
+console.log('Watched Good Omens? ' + watchShow);
 
-// if(watchShow === 'yes' || watchShow === 'y') {
-//   alert('Yay! It\'s so good! Just another awesome show from Amazon Prime!');
-// } else if(watchShow === 'no' || watchShow === 'n'){
-//   alert('I highly recommend you give it a try! Free with Amazon prime!');
-// } else {
-//   watchShow = prompt(disappointedInYou);
-// }
+if(watchShow === 'yes' || watchShow === 'y') {
+  alert('Yay! It\'s so good! Just another awesome show from Amazon Prime!');
+} else if(watchShow === 'no' || watchShow === 'n'){
+  alert('I highly recommend you give it a try! Free with Amazon prime!');
+} else {
+  watchShow = prompt(disappointedInYou);
+}
 
 // Question 6 will be a number guessing game
 
