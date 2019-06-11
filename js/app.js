@@ -56,7 +56,7 @@ var guessingGame = function(){
   var yourGuess = parseInt(prompt ('Let\'s play a game! Can you guess the number I\'m thinking of? It\'s a number between 1 and 25. You have 4 guesses!'));
   console.log('User guessed ' + yourGuess);
   var myNumber = 13;
-  for (var g = 1; g < 4; g++){
+  for (var g = 0; g < 4; g++){
     if (yourGuess === myNumber) {
       break;
     } else if (yourGuess > myNumber) {
@@ -95,6 +95,9 @@ var countryGame = function(country){
       guessTheCountries = prompt('That\'s right! Can you guess another?');
     }
   }
+  if (guessTheCountries === visitedCountries) {
+    yourGuess = alert('Congrats! You guessed correctly in only ' + g + ' attempt(s)');
+    console.log('You got it! Well done');
 };
 
 countryGame(visitedCountries);
